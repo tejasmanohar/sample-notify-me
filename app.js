@@ -1,7 +1,10 @@
-var request = require('request');
+var request = require('superagent');
 
 function sendReq(body) {
-  request.post('http://buddhabrudda.mybluemix.net/notifications/4699553379').form({text: body});
+  request.post('http://buddhabrudda.mybluemix.net/notifications/4699553379')
+    .send('{"text":body}')
+    .end(callback)
+  // request.post('http://buddhabrudda.mybluemix.net/notifications/4699553379').form({text: body});
 }
 
 setInterval(function () {
