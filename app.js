@@ -1,13 +1,7 @@
 var request = require('request');
 
 function sendReq(body) {
-  request.post(
-    'http://buddhabrudda.mybluemix.net/notifications/4699553379', 
-    {form:{
-      text: body,
-      user: '4699553379'
-    }}
-  );
+  request.post('http://buddhabrudda.mybluemix.net/notifications/4699553379').form({text: body});
 }
 
 setInterval(function () {
