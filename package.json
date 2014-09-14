@@ -1,0 +1,10 @@
+{
+  "name": "sample-buddha-brudda",
+  "description": "Send sample notifications to Buddha Brudda at PennApps Fall 2014",
+  "version": "0.1.0",
+  "author": "Tejas Manohar <me@tejasmanohar.com>",
+  "main": "app",
+  "dependencies": {
+    "request": "^2.42.0"
+  }
+}
