@@ -1,7 +1,7 @@
 var request = require('superagent');
 
 function sendReq(body) {
-  request.post('http://buddhabrudda.mybluemix.net/notifications/4699553379')
+  request.post('http://buddhabrudda.mybluemix.net/notify/4699553379')
     .set('Content-Type', 'application/json')
     .send({text: body})
     .end(function(err, res) {
@@ -24,4 +24,4 @@ setInterval(function () {
   setTimeout(sendReq('$15 spent in the last month --Plaid'), 6000)
   setTimeout(sendReq('AMZN is increasing greatly --USA Today'), 5500);
   setTimeout(sendReq('MSFT is declining --Bloomberg'), 7500);
-}, 50000)
+}, 50000);
