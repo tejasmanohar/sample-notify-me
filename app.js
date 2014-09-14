@@ -2,9 +2,11 @@ var request = require('superagent');
 
 function sendReq(body) {
   request.post('http://buddhabrudda.mybluemix.net/notifications/4699553379')
+    .set('Content-Type', 'application/json')
     .send('{"text":body}')
-    .end(callback)
-  // request.post('http://buddhabrudda.mybluemix.net/notifications/4699553379').form({text: body});
+    .end(function(err, res) {
+      console.log("Sent \"" + body + "\"")
+    }
 }
 
 setInterval(function () {
