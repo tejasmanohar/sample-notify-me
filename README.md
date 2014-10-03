@@ -1,4 +1,4 @@
 sample-buddha-brudda
 ====================
 
-Send sample notifications to Buddha Brudda at PennApps Fall 2014
+Send sample notifications to [Notify Me](https://github.com/notify-me) at PennApps Fall 2014
